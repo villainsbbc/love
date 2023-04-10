@@ -1,5 +1,5 @@
 ---
-name: issue template
+name: default template
 about: issue作成用のテンプレート
 title: ''
 labels: ''
@@ -20,4 +20,4 @@ assignees: ''
 - [ ]
 
 ## Related Issue/PR
-- #
+-
