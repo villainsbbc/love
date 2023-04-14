@@ -49,13 +49,13 @@ const Header = () =>{
           </Grid>
           <Grid item xs={3} style= {customStyles.sns}>
             <Link href="https://www.instagram.com/villains_bbc/">
-              <img src="/images/sns/insta.webp" alt="インスタロゴ" style= {customStyles.snsLogo}/>
+              <img src="/images/sns/insta.webp" alt="インスタロゴ" target="_blank" rel="noopener noreferrer" style= {customStyles.snsLogo}/>
             </Link>
             <Link href="https://www.facebook.com/villains89/">
-              <img src="/images/sns/fb.png" alt="フェイスブックロゴ" style= {customStyles.snsLogo}/>
+              <img src="/images/sns/fb.png" alt="フェイスブックロゴ" target="_blank" rel="noopener noreferrer" style= {customStyles.snsLogo}/>
             </Link>
             <Link href="https://twitter.com/Villains_bbc">
-              <img src="/images/sns/twitter.png" alt="ツイッターロゴ" style= {customStyles.snsLogo} />
+              <img src="/images/sns/twitter.png" alt="ツイッターロゴ" target="_blank" rel="noopener noreferrer" style= {customStyles.snsLogo} />
             </Link>
           </Grid>
         </Grid>
