@@ -6,7 +6,7 @@ import { Member } from "../pages/Member";
 import { Game } from "../pages/Game";
 import { Schedule } from "../pages/Schedule";
 import { SNS } from "../pages/Sns";
-import { NotFound } from "../pages/404";
+import { Page404 } from "../pages/404";
 
 export const Router = memo(() => {
   return (
@@ -19,7 +19,7 @@ export const Router = memo(() => {
           <Route path="/game" element={<Game />} />
           <Route path="/schedule" element={<Schedule />} />
           <Route path="/sns" element={<SNS />} />
-          <Route path="/*" element={<NotFound />} />
+          <Route path="/*" element={<Page404 />} />
         </Routes>
       </BrowserRouter>
     </>
