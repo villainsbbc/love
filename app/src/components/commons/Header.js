@@ -54,8 +54,8 @@ const Header = () => {
           </Typography>
         </Grid>
         <Grid item xs={3} sx={{ textAlign: "right" }}>
-          {snsImages.map((item) => (
-            <Link href={item.href} target="_blank" rel="noreferrer">
+          {snsImages.map((item, index) => (
+            <Link key={index} href={item.href} target="_blank" rel="noreferrer">
               <Box
                 component="img"
                 src={item.src}
