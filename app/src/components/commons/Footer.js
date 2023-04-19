@@ -11,14 +11,16 @@ const Footer = () =>{
   return(
     <>
       <Box component="footer" sx={{ 
-          textAlign:"center",
           backgroundColor:"rgb(3, 15, 67)",
           height:"3vw",
+          display:"flex",
+          alignItems:"center",
+          justifyContent:"center",
         }}
       >
         <Link href="attention.html" sx={{ 
             color:"#fff",
-            fontSize:"50%",
+            fontSize:"85%",
             textDecoration:"none",
             "&:hover": {
               color: "#F7CB4D",
@@ -28,14 +30,14 @@ const Footer = () =>{
         >
           当サイトの取り扱い
         </Link>
+      </Box>
         <Typography sx={{ 
           textAlign:"center",
-          fontSize:"60%",
+          fontSize:"1.5vw",
           p:"2%"
         }}>
           &copy; { getYear() } Villains
         </Typography>
-      </Box>
     </>
   )
 }
