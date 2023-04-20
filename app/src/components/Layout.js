@@ -1,17 +1,16 @@
-import React from 'react';
-import Header from './commons/Header';
-import Footer from './commons/Footer';
+import React from "react";
+import Header from "./commons/Header";
+import Footer from "./commons/Footer";
+import { Outlet } from "react-router-dom";
 
-const Layout = ( {children} ) => {
+const Layout = () => {
   return (
-    <div className="container">
+    <>
       <Header />
-      <main>
-        {children}
-      </main>
+      <Outlet />
       <Footer />
-    </div>
-  )
-}
+    </>
+  );
+};
 
 export default Layout;
