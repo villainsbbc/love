@@ -18,7 +18,7 @@ const Footer = () =>{
           justifyContent:"center",
         }}
       >
-        <Link href="attention.html" sx={{ 
+        <Link href="attention" sx={{ 
             color:"#fff",
             fontSize:"85%",
             textDecoration:"none",
