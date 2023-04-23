@@ -19,7 +19,7 @@ const Footer = () => {
         display="flex"
       >
         <Link
-          href="attention"
+          href="/attention"
           sx={{
             textDecoration: "none",
             "&:hover": {
