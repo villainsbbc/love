@@ -1,23 +1,25 @@
 import React from "react";
 import { Box, Link, Typography, Grid } from "@mui/material";
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
 
 const snsImages = [
   {
-    src: "/images/sns/insta.webp",
-    alt: "insta-logo",
+    icon: <InstagramIcon sx={{ color: "#E4405F", fontSize:"7vw" }}/>, 
     href: "https://www.instagram.com/villains_bbc/",
   },
   {
-    src: "/images/sns/fb.png",
-    alt: "fb-logo",
+    icon: <FacebookIcon sx={{ color: "#1877F2", fontSize:"7vw" }}/>, 
     href: "https://www.facebook.com/villains89/",
   },
   {
-    src: "/images/sns/twitter.png",
-    alt: "twitter-logo",
+    icon: <TwitterIcon sx={{ color: "#1d9bf0", fontSize:"7vw" }}/>, 
     href: "https://twitter.com/Villains_bbc",
   },
 ];
+
+
 
 const Header = () => {
   return (
@@ -55,17 +57,13 @@ const Header = () => {
         </Grid>
         <Grid item xs={3} sx={{ textAlign: "right" }}>
           {snsImages.map((item, index) => (
-            <Link key={index} href={item.href} target="_blank" rel="noreferrer">
-              <Box
-                component="img"
-                src={item.src}
-                alt={item.alt}
-                sx={{
-                  height: "100%",
-                  width: "25%",
-                  margin: "1.5%",
-                }}
-              />
+            <Link key={index} href={item.href} target="_blank" rel="noreferrer"
+            sx={{
+              height: "100%",
+              width: "25%",
+              margin: "1.5%",
+              }}>
+              {item.icon}
             </Link>
           ))}
         </Grid>
