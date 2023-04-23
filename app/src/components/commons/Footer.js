@@ -2,8 +2,8 @@ import React from "react";
 import { Link, Box, Typography } from "@mui/material";
 
 //著者権年号の取得
-const getYear = () => {
-  let date = new Date();
+const thisYear = () => {
+  const date = new Date();
   return date.getFullYear();
 };
 
@@ -11,6 +11,7 @@ const Footer = () => {
   return (
     <>
       <Box
+        component="footer"
         height="4vw"
         alignItems="center"
         justifyContent="center"
@@ -18,7 +19,7 @@ const Footer = () => {
         display="flex"
       >
         <Link
-          href="attention.html"
+          href="attention"
           sx={{
             textDecoration: "none",
             "&:hover": {
@@ -33,7 +34,7 @@ const Footer = () => {
         </Link>
       </Box>
       <Typography p="1%" textAlign="center" fontSize="1.5vw">
-        &copy; {getYear()} Villains
+        &copy; {thisYear()} Villains
       </Typography>
     </>
   );
