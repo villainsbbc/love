@@ -24,38 +24,24 @@ const snsImages = [
 const Header = () => {
   return (
     <>
-      <Grid
-        container
-        sx={{
-          direction: "column",
-          alignItems: "center",
-          justifyContent: "center" 
-        }}
-      >
+      <Grid container direction="row" alignItems="center">
         <Grid item xs={2}>
           <Link href="/home">
             <Box
               component="img"
               src="/images/logo.png"
               alt="チームロゴ"
-              sx={{
-                height: "100%",
-                width: "70%"
-              }}
+              height="100%"
+              width="70%"
             />
           </Link>
         </Grid>
         <Grid item xs={7}>
-          <Typography
-            sx={{
-              fontSize: "3vw",
-              fontWeight: "bold"
-            }}
-          >
+          <Typography fontSize="3vw" fontWeight="bold">
             女子軟式野球チーム Villains(ヴィランズ)
           </Typography>
         </Grid>
-        <Grid item xs={3} sx={{ textAlign: "right" }}>
+        <Grid item xs={3} textAlign="right">
           {snsImages.map((item, index) => (
             <Link key={index} href={item.href} target="_blank" rel="noreferrer"
             sx={{
