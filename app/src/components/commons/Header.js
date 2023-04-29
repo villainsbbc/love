@@ -1,23 +1,25 @@
 import React from "react";
 import { Box, Link, Typography, Grid } from "@mui/material";
+import { Instagram, Facebook, Twitter } from "@mui/icons-material";
 
-const snsImages = [
+const sns_icon_size = "7vw" ;
+
+const snsIcons = [
   {
-    src: "/images/sns/insta.webp",
-    alt: "insta-logo",
+    icon: <Instagram sx={{ color: "#E4405F", fontSize:sns_icon_size }}/>, 
     href: "https://www.instagram.com/villains_bbc/",
   },
   {
-    src: "/images/sns/fb.png",
-    alt: "fb-logo",
+    icon: <Facebook sx={{ color: "#1877F2", fontSize:sns_icon_size }}/>, 
     href: "https://www.facebook.com/villains89/",
   },
   {
-    src: "/images/sns/twitter.png",
-    alt: "twitter-logo",
+    icon: <Twitter sx={{ color: "#1d9bf0", fontSize:sns_icon_size }}/>, 
     href: "https://twitter.com/Villains_bbc",
   },
 ];
+
+
 
 const Header = () => {
   return (
@@ -40,16 +42,9 @@ const Header = () => {
           </Typography>
         </Grid>
         <Grid item xs={3} textAlign="right">
-          {snsImages.map((item, index) => (
+          {snsIcons.map((item, index) => (
             <Link key={index} href={item.href} target="_blank" rel="noreferrer">
-              <Box
-                component="img"
-                src={item.src}
-                alt={item.alt}
-                height="100%"
-                width="25%"
-                margin="1.5%"
-              />
+              {item.icon}
             </Link>
           ))}
         </Grid>
